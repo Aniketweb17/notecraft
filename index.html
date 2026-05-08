@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="style.css">
   <style>
     /* ─── RESET & VARIABLES ──────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -731,169 +732,188 @@
 
       <!-- Product 1 -->
       <div class="product-card reveal">
-        <div class="product-thumb" style="background:#e8f0e9;">
-          <svg viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg">
-            <rect x="5" y="5" width="80" height="120" rx="3" fill="#2d4a35"/>
-            <rect x="5" y="5" width="12" height="120" fill="#1d3425"/>
-            <line x1="25" y1="30" x2="77" y2="30" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
-            <line x1="25" y1="45" x2="77" y2="45" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
-            <line x1="25" y1="60" x2="77" y2="60" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
-            <line x1="25" y1="75" x2="77" y2="75" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
-            <text x="19" y="20" font-size="6" fill="rgba(255,255,255,.7)" font-family="Georgia">NoteCraft™</text>
-          </svg>
-        </div>
-        <div class="product-info">
-          <div class="product-cat">Academic</div>
-          <div class="product-name">Scholar Series</div>
-          <div class="product-desc">Single-line ruled, 70 GSM cream paper, laminated hardcover. Perfect for students from Class 1 to post-grad.</div>
-          <div class="product-footer">
-            <span class="product-price">From ₹25</span>
-            <button class="product-btn">Enquire</button>
-          </div>
-        </div>
-      </div>
+  
+  <div class="product-thumb book scholar">
+    
+    <!-- Cover -->
+    <div class="cover">
+      <svg viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg">
+        <!-- Main cover -->
+        <rect x="5" y="5" width="80" height="120" rx="3" fill="#2d4a35"/>
+        
+        <!-- Spine -->
+        <rect x="5" y="5" width="12" height="120" fill="#1d3425"/>
+        
+        <!-- Brand -->
+        <text x="19" y="20" font-size="6" fill="rgba(255,255,255,.7)" font-family="Georgia">
+          NoteCraft™
+        </text>
+      </svg>
+    </div>
 
-      <!-- Product 2 -->
+    <!-- Inner Page -->
+    <div class="page"></div>
+
+  </div>
+
+  <div class="product-info">
+    <div class="product-cat">Academic</div>
+    <div class="product-name">Scholar Series</div>
+    <div class="product-desc">
+      Single-line ruled, 70 GSM cream paper, laminated hardcover. 
+      Perfect for students from Class 1 to post-grad.
+    </div>
+    <div class="product-footer">
+      <span class="product-price">From ₹25</span>
+      <button class="product-btn">Enquire</button>
+    </div>
+  </div>
+
+</div>
+    <!-- Product 2 -->  
       <div class="product-card reveal">
-        <div class="product-thumb" style="background:#f5ebe0;">
-          <svg viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg">
-            <rect x="5" y="5" width="80" height="120" rx="3" fill="#c8873a"/>
-            <rect x="5" y="5" width="12" height="120" fill="#a06828"/>
-            <line x1="25" y1="30" x2="77" y2="30" stroke="rgba(255,255,255,.3)" stroke-width="1"/>
-            <line x1="25" y1="45" x2="77" y2="45" stroke="rgba(255,255,255,.3)" stroke-width="1"/>
-            <line x1="25" y1="60" x2="77" y2="60" stroke="rgba(255,255,255,.3)" stroke-width="1"/>
-            <rect x="25" y="80" width="52" height="28" rx="2" fill="rgba(255,255,255,.1)"/>
-            <text x="19" y="20" font-size="6" fill="rgba(255,255,255,.8)" font-family="Georgia">NoteCraft™</text>
-          </svg>
-        </div>
-        <div class="product-info">
-          <div class="product-cat">Corporate</div>
-          <div class="product-name">Executive Folio</div>
-          <div class="product-desc">Premium 100 GSM ivory paper, ribbon bookmark, elastic closure. Ideal for meetings and professional use.</div>
-          <div class="product-footer">
-            <span class="product-price">From ₹120</span>
-            <button class="product-btn">Enquire</button>
-          </div>
-        </div>
-      </div>
+  
+  <div class="product-thumb book executive">
+    
+    <div class="cover">
+      <svg viewBox="0 0 90 130">
+        <rect x="5" y="5" width="80" height="120" rx="4" fill="#1a1a1a"/>
+        <text x="18" y="20" font-size="6" fill="rgba(255,255,255,.6)">Executive</text>
+      </svg>
+    </div>
+
+    <div class="page"></div>
+
+  </div>
+
+  <div class="product-info">
+    <div class="product-cat">Corporate</div>
+    <div class="product-name">Executive Folio</div>
+    <div class="product-desc">Premium minimal notebook for professionals.</div>
+    <div class="product-footer">
+      <span class="product-price">From ₹120</span>
+      <button class="product-btn">Enquire</button>
+    </div>
+  </div>
+
+</div>
 
       <!-- Product 3 -->
       <div class="product-card reveal">
-        <div class="product-thumb" style="background:#ece8f5;">
-          <svg viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg">
-            <rect x="5" y="5" width="80" height="120" rx="3" fill="#5a3a7a"/>
-            <rect x="5" y="5" width="12" height="120" fill="#3d2558"/>
-            <!-- Dot grid -->
-            <circle cx="30" cy="30" r="1" fill="rgba(255,255,255,.3)"/>
-            <circle cx="45" cy="30" r="1" fill="rgba(255,255,255,.3)"/>
-            <circle cx="60" cy="30" r="1" fill="rgba(255,255,255,.3)"/>
-            <circle cx="75" cy="30" r="1" fill="rgba(255,255,255,.3)"/>
-            <circle cx="30" cy="45" r="1" fill="rgba(255,255,255,.3)"/>
-            <circle cx="45" cy="45" r="1" fill="rgba(255,255,255,.3)"/>
-            <circle cx="60" cy="45" r="1" fill="rgba(255,255,255,.3)"/>
-            <circle cx="75" cy="45" r="1" fill="rgba(255,255,255,.3)"/>
-            <circle cx="30" cy="60" r="1" fill="rgba(255,255,255,.3)"/>
-            <circle cx="45" cy="60" r="1" fill="rgba(255,255,255,.3)"/>
-            <circle cx="60" cy="60" r="1" fill="rgba(255,255,255,.3)"/>
-            <circle cx="75" cy="60" r="1" fill="rgba(255,255,255,.3)"/>
-            <text x="19" y="20" font-size="6" fill="rgba(255,255,255,.7)" font-family="Georgia">NoteCraft™</text>
-          </svg>
-        </div>
-        <div class="product-info">
-          <div class="product-cat">Creative</div>
-          <div class="product-name">Artist Dot Grid</div>
-          <div class="product-desc">5mm dot grid, 120 GSM smooth paper, lay-flat binding. Loved by designers, bullet journalers, and artists.</div>
-          <div class="product-footer">
-            <span class="product-price">From ₹95</span>
-            <button class="product-btn">Enquire</button>
-          </div>
-        </div>
-      </div>
+  
+  <div class="product-thumb book artist">
+    
+    <div class="cover">
+      <svg viewBox="0 0 90 130">
+        <rect x="5" y="5" width="80" height="120" rx="4" fill="#6c5ce7"/>
+        <text x="20" y="20" font-size="6" fill="white">Artist</text>
+      </svg>
+    </div>
+
+    <div class="page"></div>
+
+  </div>
+
+  <div class="product-info">
+    <div class="product-cat">Creative</div>
+    <div class="product-name">Artist Dot Grid</div>
+    <div class="product-desc">Perfect for sketching, journaling, and design work.</div>
+    <div class="product-footer">
+      <span class="product-price">From ₹80</span>
+      <button class="product-btn">Enquire</button>
+    </div>
+  </div>
+
+</div>
 
       <!-- Product 4 -->
       <div class="product-card reveal">
-        <div class="product-thumb" style="background:#fdecea;">
-          <svg viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg">
-            <rect x="5" y="5" width="80" height="120" rx="3" fill="#8b3a2a"/>
-            <rect x="5" y="5" width="12" height="120" fill="#6a2a1a"/>
-            <!-- Spiral rings -->
-            <circle cx="17" cy="25" r="5" fill="none" stroke="silver" stroke-width="1.5"/>
-            <circle cx="17" cy="45" r="5" fill="none" stroke="silver" stroke-width="1.5"/>
-            <circle cx="17" cy="65" r="5" fill="none" stroke="silver" stroke-width="1.5"/>
-            <circle cx="17" cy="85" r="5" fill="none" stroke="silver" stroke-width="1.5"/>
-            <circle cx="17" cy="105" r="5" fill="none" stroke="silver" stroke-width="1.5"/>
-            <line x1="25" y1="30" x2="77" y2="30" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
-            <line x1="25" y1="50" x2="77" y2="50" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
-            <line x1="25" y1="70" x2="77" y2="70" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
-            <text x="27" y="20" font-size="6" fill="rgba(255,255,255,.7)" font-family="Georgia">NoteCraft™</text>
-          </svg>
-        </div>
-        <div class="product-info">
-          <div class="product-cat">Daily Use</div>
-          <div class="product-name">Spiral Bound Pro</div>
-          <div class="product-desc">180° lay-flat spiral, perforated pages, twin-wire binding. Available in A4, A5, and B5 sizes.</div>
-          <div class="product-footer">
-            <span class="product-price">From ₹45</span>
-            <button class="product-btn">Enquire</button>
-          </div>
-        </div>
-      </div>
+  
+  <div class="product-thumb book spiral">
+    
+    <div class="cover">
+      <svg viewBox="0 0 90 130">
+        <rect x="5" y="5" width="80" height="120" rx="4" fill="#34495e"/>
+        <text x="18" y="20" font-size="6" fill="white">Spiral Pro</text>
+      </svg>
+    </div>
 
+    <div class="page"></div>
+
+  </div>
+
+  <div class="product-info">
+    <div class="product-cat">Professional</div>
+    <div class="product-name">Spiral Bound Pro</div>
+    <div class="product-desc">Durable spiral notebooks for everyday use.</div>
+    <div class="product-footer">
+      <span class="product-price">From ₹60</span>
+      <button class="product-btn">Enquire</button>
+    </div>
+  </div>
+
+</div>
       <!-- Product 5 -->
       <div class="product-card reveal">
-        <div class="product-thumb" style="background:#e8f4f0;">
-          <svg viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg">
-            <rect x="5" y="5" width="80" height="120" rx="3" fill="#1a6b5a"/>
-            <rect x="5" y="5" width="12" height="120" fill="#0f4a3a"/>
-            <rect x="22" y="20" width="58" height="90" rx="2" fill="rgba(255,255,255,.08)"/>
-            <line x1="25" y1="35" x2="75" y2="35" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
-            <line x1="25" y1="50" x2="75" y2="50" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
-            <line x1="25" y1="65" x2="75" y2="65" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
-            <line x1="25" y1="80" x2="75" y2="80" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
-            <circle cx="20" cy="110" r="4" fill="#c8873a"/>
-            <text x="19" y="18" font-size="6" fill="rgba(255,255,255,.7)" font-family="Georgia">NoteCraft™</text>
-          </svg>
-        </div>
-        <div class="product-info">
-          <div class="product-cat">Custom / OEM</div>
-          <div class="product-name">BrandMark Edition</div>
-          <div class="product-desc">Fully customisable — your logo, colors, paper weight, and binding style. Minimum order 500 units.</div>
-          <div class="product-footer">
-            <span class="product-price">Get Quote</span>
-            <button class="product-btn">Enquire</button>
-          </div>
-        </div>
-      </div>
+  
+  <div class="product-thumb book brandmark">
+    
+    <div class="cover">
+      <svg viewBox="0 0 90 130">
+        <rect x="5" y="5" width="80" height="120" rx="4" fill="url(#grad)"/>
+        <defs>
+          <linearGradient id="grad">
+            <stop offset="0%" stop-color="#ff7a18"/>
+            <stop offset="100%" stop-color="#ff3d00"/>
+          </linearGradient>
+        </defs>
+        <text x="22" y="65" font-size="10" fill="white">BM</text>
+      </svg>
+    </div>
+
+    <div class="page"></div>
+
+  </div>
+
+  <div class="product-info">
+    <div class="product-cat">Signature</div>
+    <div class="product-name">Brandmark Edition</div>
+    <div class="product-desc">Custom branded notebooks for your identity.</div>
+    <div class="product-footer">
+      <span class="product-price">Custom Pricing</span>
+      <button class="product-btn">Enquire</button>
+    </div>
+  </div>
+
+</div>
 
       <!-- Product 6 -->
       <div class="product-card reveal">
-        <div class="product-thumb" style="background:#fef9ec;">
-          <svg viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg">
-            <rect x="5" y="5" width="80" height="120" rx="3" fill="#1a1209"/>
-            <rect x="5" y="5" width="12" height="120" fill="#c8873a"/>
-            <rect x="25" y="20" width="52" height="72" rx="2" fill="rgba(255,255,255,.05)"/>
-            <line x1="28" y1="35" x2="72" y2="35" stroke="rgba(255,255,255,.15)" stroke-width="1"/>
-            <line x1="28" y1="48" x2="72" y2="48" stroke="rgba(255,255,255,.15)" stroke-width="1"/>
-            <line x1="28" y1="61" x2="72" y2="61" stroke="rgba(255,255,255,.15)" stroke-width="1"/>
-            <line x1="28" y1="74" x2="72" y2="74" stroke="rgba(255,255,255,.15)" stroke-width="1"/>
-            <!-- Gold foil edge effect -->
-            <rect x="78" y="5" width="5" height="120" fill="linear-gradient(#c8873a,#a06828)"/>
-            <rect x="80" y="5" width="3" height="120" fill="#c8873a" opacity=".6"/>
-            <text x="19" y="20" font-size="6" fill="#c8873a" font-family="Georgia">NoteCraft™</text>
-          </svg>
-        </div>
-        <div class="product-info">
-          <div class="product-cat">Premium Gift</div>
-          <div class="product-name">Noir Prestige</div>
-          <div class="product-desc">Jet-black case bound, gold-foil edges, 160 GSM ivory. A statement gift for top-tier clients and executives.</div>
-          <div class="product-footer">
-            <span class="product-price">From ₹350</span>
-            <button class="product-btn">Enquire</button>
-          </div>
-        </div>
-      </div>
-
+  
+  <div class="product-thumb book noir">
+    
+    <div class="cover">
+      <svg viewBox="0 0 90 130">
+        <rect x="5" y="5" width="80" height="120" rx="4" fill="black"/>
+        <text x="18" y="20" font-size="6" fill="gold">Noir</text>
+      </svg>
     </div>
+
+    <div class="page"></div>
+
+  </div>
+
+  <div class="product-info">
+    <div class="product-cat">Luxury</div>
+    <div class="product-name">Noir Prestige</div>
+    <div class="product-desc">Elegant premium notebooks with luxury finish.</div>
+    <div class="product-footer">
+      <span class="product-price">From ₹150</span>
+      <button class="product-btn">Enquire</button>
+    </div>
+  </div>
+
+</div>
   </section>
 
   <!-- ═══ PROCESS ════════════════════════════════════════ -->
@@ -1110,125 +1130,9 @@
   </footer>
 
   <!-- ═══ SCRIPTS ════════════════════════════════════════ -->
-  <script>
-    // Navbar scroll effect
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 40);
-    });
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
-    // Scroll reveal
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          // stagger siblings
-          const siblings = entry.target.parentElement.querySelectorAll('.reveal');
-          siblings.forEach((el, i) => {
-            if (!el.classList.contains('visible')) {
-              setTimeout(() => el.classList.add('visible'), i * 120);
-            }
-          });
-        }
-      });
-    }, { threshold: 0.12 });
-    reveals.forEach(el => observer.observe(el));
-
-    // Smooth scroll for all anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        const target = document.querySelector(a.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
-
-    // Mobile menu
-    function toggleMenu() {
-      const nav = document.querySelector('.nav-links');
-      if (nav.style.display === 'flex') {
-        nav.style.display = 'none';
-      } else {
-        nav.style.cssText = `
-          display: flex; flex-direction: column;
-          position: fixed; top: 70px; left: 0; right: 0;
-          background: rgba(250,247,242,.97); backdrop-filter: blur(12px);
-          padding: 2rem; gap: 1.5rem;
-          border-bottom: 1px solid #d4c9b0;
-          z-index: 999;
-        `;
-      }
-    }
-
-    // Enquire buttons
-    document.querySelectorAll('.product-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-
-    // Form submit
-    function handleSubmit() {
-      const btn = document.querySelector('.form-submit .btn-primary');
-      btn.textContent = '✓ Enquiry Sent!';
-      btn.style.background = '#2d4a35';
-      setTimeout(() => {
-        btn.textContent = 'Send Enquiry →';
-        btn.style.background = '';
-      }, 3000);
-    }
-
-    // Animated counters on stats
-    function animateCount(el, target, suffix = '') {
-      let count = 0;
-      const step = target / 60;
-      const interval = setInterval(() => {
-        count = Math.min(count + step, target);
-        el.textContent = (count >= 1000 ? (count/1000).toFixed(1)+'K' : Math.round(count)) + suffix;
-        if (count >= target) clearInterval(interval);
-      }, 20);
-    }
-  </script>
-  <script>
-function sendToWhatsApp(event) {
-  event.preventDefault();
-
-  let name = document.querySelector('[name="name"]').value || "";
-  let company = document.querySelector('[name="company"]').value || "";
-  let email = document.querySelector('[name="email"]').value || "";
-  let phoneInput = document.querySelector('[name="phone"]').value || "";
-  let product = document.querySelector('[name="product"]').value || "";
-  let message = document.querySelector('[name="message"]').value || "";
-
-  let yourNumber = "918237896811";
-
-  let text =
-`New Enquiry:
-
-Name: ${name}
-Company: ${company}
-Email: ${email}
-Phone: ${phoneInput}
-Product: ${product}
-Message: ${message}`;
-
-  let encodedText = encodeURIComponent(text);
-
-  let isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-  let url;
-
-  if (isMobile) {
-    url = "https://wa.me/" + yourNumber + "?text=" + encodedText;
-  } else {
-    url = "https://web.whatsapp.com/send?phone=" + yourNumber + "&text=" + encodedText;
-  }
-
-  window.open(url, "_blank");
-}
-</script>
+<script src="script.js"></script>
 </body>
 </html>
