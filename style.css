@@ -1,7 +1,13 @@
 /* PASTE YOUR FULL CSS FROM ORIGINAL CODE HERE */
 
 /* Example start */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 :root {
   --ink: #1a1209;
@@ -12,7 +18,7 @@
   --forest: #2d4a35;
   --rust: #8b3a2a;
   --rule: #d4c9b0;
-  --shadow: rgba(26,18,9,0.12);
+  --shadow: rgba(26, 18, 9, 0.12);
   --ff-head: 'Playfair Display', Georgia, serif;
   --ff-body: 'DM Sans', sans-serif;
   --ff-mono: 'DM Mono', monospace;
@@ -38,21 +44,22 @@
 /* Cover + Page base */
 .product-thumb .cover,
 .product-thumb .page {
-  
   width: 90px;
   height: 130px;
   position: absolute;
   top: 50%;
   left: 50%;
-  
-  transition: translate(-50%, -50%);
+  translate: -50% -50%;
   transform-origin: left;
   transition: transform 0.6s ease;
+  border-radius: 3px 8px 8px 3px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
 }
 
 /* Cover styling */
 .product-thumb .cover {
   z-index: 2;
+  overflow: hidden;
 }
 
 /* Page styling */
@@ -63,19 +70,26 @@
 
 /* Hover open effect */
 .product-thumb.book:hover .cover {
-  transform: translate(-50%, -50%) rotateY(-120deg);
+  transform: rotateY(-120deg);
 }
+
+.floating-element {
+  animation: float 4s ease-in-out infinite;
+}
+
+.glowing-element {
+  animation: glow 2s infinite;
+}
+
 /* ========================= */
 /* 📘 Scholar Series Styling */
 /* ========================= */
 
 .book.scholar .page {
-  background: repeating-linear-gradient(
-    to bottom,
-    #ffffff 0px,
-    #ffffff 26px,
-    #b0c4de 27px
-  );
+  background: repeating-linear-gradient(to bottom,
+      #ffffff 0px,
+      #ffffff 26px,
+      #b0c4de 27px);
 }
 
 /* Optional: red margin line */
@@ -88,6 +102,7 @@
   height: 100%;
   background: #e74c3c;
 }
+
 /*executive folio*/
 .book.executive .cover {
   background: #1a1a1a;
@@ -96,6 +111,7 @@
 .book.executive .page {
   background: #fdfdfd;
 }
+
 /*artist dot grid*/
 .book.artist .cover {
   background: #6c5ce7;
@@ -105,18 +121,17 @@
   background-image: radial-gradient(#999 1px, transparent 1px);
   background-size: 18px 18px;
 }
+
 /*spiral bound pro*/
 .book.spiral .cover {
   background: #34495e;
 }
 
 .book.spiral .page {
-  background: repeating-linear-gradient(
-    to bottom,
-    #ede1e1 0px,
-    #ede5e5 24px,
-    #0b0a0a 25px
-  );
+  background: repeating-linear-gradient(to bottom,
+      #ede1e1 0px,
+      #ede5e5 24px,
+      #0b0a0a 25px);
 }
 
 /* Spiral effect */
@@ -127,14 +142,13 @@
   top: 0;
   width: 10px;
   height: 100%;
-  background: repeating-linear-gradient(
-    to bottom,
-    #888 0px,
-    #888 8px,
-    transparent 8px,
-    transparent 16px
-  );
+  background: repeating-linear-gradient(to bottom,
+      #888 0px,
+      #888 8px,
+      transparent 8px,
+      transparent 16px);
 }
+
 /*brand mark edition*/
 .book.brandmark .cover {
   background: linear-gradient(135deg, #ff7a18, #ff3d00);
@@ -143,6 +157,7 @@
 .book.brandmark .page {
   background: #fff;
 }
+
 .book.brandmark .cover::after {
   content: "";
   position: absolute;
@@ -150,17 +165,18 @@
   top: 0;
   width: 4px;
   height: 100%;
-  background: #222; /* band color */
+  background: #222;
+  /* band color */
 }
+
 .book.brandmark .page {
-  background-image: repeating-linear-gradient(
-    to bottom,
-    transparent 0px,
-    transparent 12px,
-    #111 13px,
-    #111 14px
-  );
+  background-image: repeating-linear-gradient(to bottom,
+      transparent 0px,
+      transparent 12px,
+      #111 13px,
+      #111 14px);
 }
+
 /*noir prestige*/
 .book.noir .cover {
   background: linear-gradient(145deg, #000, #2b2b2b);
@@ -169,6 +185,7 @@
 .book.noir .page {
   background: #fafafa;
 }
+
 .book.noir .page::after {
   content: "";
   position: absolute;
